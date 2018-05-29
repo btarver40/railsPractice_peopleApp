@@ -1,13 +1,13 @@
 <div class="home2">
   <h1>Clients</h1>
   <% @clients.each do |client|%>
-    <%= link_to  "New Client Page", new_client_path%>
-    <%= link_to "Delete", client_path(client.id), method: :delete %>
     <h3 class="center"><%= client.name %></h3>
     <h4 class="center"><%= client.age %></h4>
     <h4 class="center"><%= client.eye_color %></h4>
     <h4 class="center"><%= client.hair_color %></h4>
     <h4 class="center"><%= client.gender %></h4>
     <h4 class="center"><%= client.alive %></h4>
+    <%= link_to  "New Client Page", new_client_path%>
+    <%= link_to "Delete", client_path(client.id), method: :delete %>
   <% end %>
 </div>
